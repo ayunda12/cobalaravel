@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use Illuminate\Support\Facades\Route;
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'BerandaController@index');
+Route::get('/petugas', 'PetugasController@index');
+Route::get('/anggota', 'AnggotaController@index');
+Route::get('/buku', 'BukuController@index');
+Route::get('/login', 'LoginController@index');
