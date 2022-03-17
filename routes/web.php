@@ -19,3 +19,5 @@ Route::get('/petugas', 'PetugasController@index');
 Route::get('/anggota', 'AnggotaController@index');
 Route::get('/buku', 'BukuController@index');
 Route::get('/login', 'LoginController@index');
+Route::get('/peminjaman', 'PeminjamanController@index');
+Route::get('/pengembalian', 'PengembalianController@index');
